@@ -161,6 +161,9 @@ a {
   filter: brightness(1.25);
   transition: all 0.5s; 
 }
+.text-block:focus {
+  border: solid 2px;
+}
 
 /* RFECIPES */
 
