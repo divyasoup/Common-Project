@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/travel.ico" type="image/x-icon">
 
     <title>Travel</title>
 
@@ -21,22 +23,31 @@
             }
         } 
     </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
 
 </head>
 
 <body id="travel">
+
+    
     <a href="#main" id="skip">Skip to Main Content</a>
 
     <!-- navigation mobile -->
-    <a href="#main" id="skip">Skip to Main Content</a>
     <div class="topnav">
-        <a href="#index" class="active">Travel</a>
+        <a href="travel.html" class="active">Travel</a>
         <div id="myLinks">
             <a href="index.html">Home/Pets</a>
             <a href="recipes.html">Recipes</a>
             <a href="travel.html" style="text-decoration: underline;">Travel</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
@@ -49,12 +60,14 @@
         </ul>
     </nav> -->
 
-    <main>
+    <main id="main">
         <div>
+            <h1>Travel</h1>
+
             <h2>Yellowstone</h2>
 
-            <img class=thumbnail src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
-            <img class=thumbnail src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron">
+            <img class="thumbnail gif" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+            <img class="thumbnail static" src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron">
 
             <h3>Geographical Location: North America</h3>
             <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and
@@ -70,42 +83,51 @@
 
             <h3>Photo Gallery</h3>
             <figure>
-                <img class=thumbnail src="images/yellowstone_travertine.JPG" width="200"
-                    alt="A large mound of multi-colored travertine">
+                <a href="images/yellowstone_travertine.JPG" target="_blank" data-lightbox="yellowstone">
+                    <img class=thumbnail src="images/yellowstone_travertine.JPG" width="200"
+                        alt="A large mound of multi-colored travertine">
+                </a>
                 <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
             </figure>
 
             <figure>
-                <img class=thumbnail src="images/yellowstone_sunset.jpg" width="200"
-                    alt="Sunset over mountains with some charred trees in the foreground">
+                <a href="images/yellowstone_sunset.jpg" target="_blank" data-lightbox="yellowstone">
+                    <img class=thumbnail src="images/yellowstone_sunset.jpg" width="200"
+                        alt="Sunset over mountains with some charred trees in the foreground">
+                </a>
                 <figcaption>The drive to Lamar Valley requires some dangerous roads. But the result is amazing sunset
                     views.</figcaption>
             </figure>
 
 
             <figure>
-                <video class=thumbnail width="200" controls>
-                    <source src="images/yellowstone_prism.MOV">
-                    Your browser does not support the video tag.
-                </video>
+                <a href="images/yellowstone_prism.MOV" target="_blank" data-lightbox="yellowstone">
+                    <video class=thumbnail width="200" controls>
+                        <source src="images/yellowstone_prism.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
                 <figcaption>The multicolored layers get their hues from different species of bacteria living in the
                     cooler water around the spring.</figcaption>
             </figure>
 
 
             <figure>
-                <video class=thumbnail width="200" controls>
-                    <source src="images/yellowstone_buffalo.MOV">
-                    Your browser does not support the video tag.
-                </video>
+                <a href="images/yellowstone_buffalo.MOV" target="_blank" data-lightbox="yellowstone">
+                    <video class=thumbnail width="200" controls>
+                        <source src="images/yellowstone_buffalo.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
                 <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it
                     ain't lickin the car, we aren't stopping."</figcaption>
             </figure>
 
             <figure>
-                <img class=thumbnail src="images/yellowstone_sulphur_springs.JPG" width="200"
-                    alt="A large spring with clouds of sulfur smoke rising from it.">
-
+                <a href="images/yellowstone_sulphur_springs.JPG" target="_blank" data-lightbox="yellowstone">
+                    <img class=thumbnail src="images/yellowstone_sulphur_springs.JPG" width="200"
+                        alt="A large spring with clouds of sulfur smoke rising from it.">
+                </a>
                 <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.
                 </figcaption>
             </figure>
@@ -113,8 +135,8 @@
         </div>
         <div>
             <h2>Barcelona, Spain</h2>
-            <img src="images/barcelona_gif.gif" alt="Gif of Church in Barcelona" width="400">
-            <img src="images/Barcelona_non_gif.jpg" alt="Barcelona Beach" width="400">
+            <img class="thumbnail gif" src="images/barcelona_gif.gif" alt="Gif of Church in Barcelona" width="400">
+            <img class="thumbnail static" src="images/Barcelona_non_gif.jpg" alt="Barcelona Beach" width="400">
 
             <h3>Geographical Location: Europe</h3>
 
@@ -130,36 +152,46 @@
             <h3>Photo Gallery</h3>
 
             <figure>
-                <img src="images/Barcelona_Beach.jpg" alt="Aerial image of a sandy beach with buildings along the sand"
-                    width="200">
+                <a href="images/Barcelona_Beach.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_Beach.jpg"
+                        alt="Aerial image of a sandy beach with buildings along the sand" width="200">
+                </a>
                 <figcaption>Beach in Barcelona</figcaption>
             </figure>
 
             <figure>
-                <img src="images/Barcelona_GaudiHouse.jpg"
-                    alt="Image of an oval roof with wavy shape and pillars extending from the top, with a hole in the middle"
-                    width="200">
+                <a href="images/Barcelona_GaudiHouse.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_GaudiHouse.jpg"
+                        alt="Image of an oval roof with wavy shape and pillars extending from the top, with a hole in the middle"
+                        width="200">
+                </a>
                 <figcaption>Roof of a Building designed by revolutionary architect Gaudi</figcaption>
             </figure>
 
             <figure>
-                <img src="images/Barcelona_LamineYamal_BarcelonaFC.jpg"
-                    alt=" Lamine Yamal, a soccer player for Barcelona football club dribbled past three opponents wearing yellow jerseys."
-                    width="200">
+                <a href="images/Barcelona_LamineYamal_BarcelonaFC.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_LamineYamal_BarcelonaFC.jpg"
+                        alt=" Lamine Yamal, a soccer player for Barcelona football club dribbled past three opponents wearing yellow jerseys."
+                        width="200">
+                </a>
                 <figcaption> A Barcelona soccer player dribbles past 3 defenders</figcaption>
             </figure>
 
             <figure>
-                <img src="images/Barcelona_ParkGuell.jpg"
-                    alt="View from a balcony decorated by multicolored ceramic mosaic looking out over two brown houses with checkered patterned white and tan roofs with a small tower on one of the houses, and the city of Barcelona in the distance."
-                    width="200">
+                <a href="images/Barcelona_ParkGuell.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_ParkGuell.jpg"
+                        alt="View from a balcony decorated by multicolored ceramic mosaic looking out over two brown houses with checkered patterned white and tan roofs with a small tower on one of the houses, and the city of Barcelona in the distance."
+                        width="200">
+                </a>
                 <figcaption>A Balcony and Two houses designed by Architect Gaudi</figcaption>
             </figure>
 
             <figure>
-                <img src="images/Barcelona_SagradaFamilia.jpg"
-                    alt="Image looking up at a ginormous church with four towers in the foreground and one larger tower behind. 6 columns are in front of the towers supporting the structure of the church with statues depicting iconic moments in the Bible."
-                    width="200">
+                <a href="images/Barcelona_SagradaFamilia.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_SagradaFamilia.jpg"
+                        alt="Image looking up at a ginormous church with four towers in the foreground and one larger tower behind. 6 columns are in front of the towers supporting the structure of the church with statues depicting iconic moments in the Bible."
+                        width="200">
+                </a>
                 <figcaption>Large church still under construction designed by Architect Gaudi</figcaption>
 
                 <!--Kathryn Alcalde-->
@@ -167,8 +199,9 @@
         </div>
         <div>
             <h2>Banff National Park</h2>
-            <img src="images/Banff_National_Park.gif" alt="Gif of Banff's waters" width="400">
-            <img src="images/Banff_National_Park.jpg" alt="Still of Banff's waters" width="400">
+            <img class="thumbnail gif" src="images/Banff_National_Park.gif" alt="Gif of Banff's waters" width="400">
+            <img class="thumbnail static" src="images/Banff_National_Park.jpg" alt="Still of Banff's waters"
+                width="400">
 
             <h3>Geographical Location: North America</h3>
 
@@ -183,33 +216,43 @@
 
             <h3>Photo Gallery</h3>
             <figure>
-                <img src="images/Banff_gondola.jpg" alt="Gondola leading up to highest peaks of Banff" width="200">
+                <a href="images/Banff_gondola.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_gondola.jpg" alt="Gondola leading up to highest peaks of Banff" width="200">
+                </a>
                 <figcaption>Banff gondola leads to the highest peaks and allows for spectacular views </figcaption>
             </figure>
 
             <figure>
-                <img src="images/Banff_Moraine.jpg" alt="Large turquoise lake with surrounding peaks" width="200">
+                <a href="images/Banff_Moraine.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Moraine.jpg" alt="Large turquoise lake with surrounding peaks" width="200">
+                </a>
                 <figcaption>Lake Moraine is fed by glacial melt, the minerals in the glaciers give it its iconic color.
                 </figcaption>
             </figure>
 
             <figure>
-                <img src="images/Banff_Fairmont.jpg" alt="Large hotel complex in green forests surrounded by mountains"
-                    width="200">
+                <a href="images/Banff_Fairmont.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Fairmont.jpg"
+                        alt="Large hotel complex in green forests surrounded by mountains" width="200">
+                </a>
                 <figcaption>The fairmont resort is the foremost luxury hotel in Banff built atop hot springs.
                 </figcaption>
             </figure>
 
             <figure>
-                <img src="images/Banff_Sulphur_mountain.jpg"
-                    alt="Rocky peaks and trails on a high mountain with mountains in the distance." width="200">
+                <a href="images/Banff_Sulphur_mountain.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Sulphur_mountain.jpg"
+                        alt="Rocky peaks and trails on a high mountain with mountains in the distance." width="200">
+                </a>
                 <figcaption>Sulphur mountain is accessible through the Banff Gondola and provides a central view of the
                     surrounding mountain ranges.</figcaption>
             </figure>
 
             <figure>
-                <img src="images/Banff_Bow_falls.jpg"
-                    alt="Wide waterfall leading into calm river, surrounded by mountains and forests." width="200">
+                <a href="images/Banff_gondola.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Bow_falls.jpg"
+                        alt="Wide waterfall leading into calm river, surrounded by mountains and forests." width="200">
+                </a>
                 <figcaption>Bow falls is a major attraction and provides many hiking trails.</figcaption>
             </figure>
 
@@ -217,8 +260,8 @@
         </div>
         <div>
             <h2>Grand Canyon</h2>
-            <img src="images/grand_canyon.gif" alt="" width="400">
-            <img src="images/grand_canyon.jpg" alt="" width="400">
+            <img class="thumbnail gif" src="images/grand_canyon.gif" alt="" width="400">
+            <img class="thumbnail static" src="images/grand_canyon.jpg" alt="" width="400">
 
             <h3>Geographical Location: North America</h3>
 
@@ -237,27 +280,37 @@
             <h3>Photo Gallery</h3>
 
             <figure>
-                <img src="images/grand_canyon_sunset_snow.jpg" alt="Sunset with Snowy Cliffs" width="200">
+                <a href="images/grand_canyon_sunset_snow.jpg" target="_blank" data-lightbox="canyon">
+                    <img src="images/grand_canyon_sunset_snow.jpg" alt="Sunset with Snowy Cliffs" width="200">
+                </a>
                 <figcaption>Overlook the Grand Canyon snowy cliffs while the sun is setting </figcaption>
             </figure>
 
             <figure>
-                <img src="images/grand_canyon_river.jpg" alt="Valley with river" width="200">
+                <a href="images/grand_canyon_river.jpg" target="_blank" data-lightbox="canyon">
+                    <img src="images/grand_canyon_river.jpg" alt="Valley with river" width="200">
+                </a>
                 <figcaption>Grand Canyon valley river during the day </figcaption>
             </figure>
 
             <figure>
-                <img src="images/grand_canyon_cliff_people.jpg" alt="People at a cliff" width="200">
+                <a href="images/grand_canyon_cliff_people.jpg" target="_blank" data-lightbox="canyon">
+                    <img src="images/grand_canyon_cliff_people.jpg" alt="People at a cliff" width="200">
+                </a>
                 <figcaption>Cliff overlooking the rest of the Grand Canyon</figcaption>
             </figure>
 
             <figure>
-                <img src="images/grand_canyon_goat.jpg" alt="'Goat on a cliff" width="200">
+                <a href="images/grand_canyon_goat.jpg" target="_blank" data-lightbox="canyon">
+                    <img src="images/grand_canyon_goat.jpg" alt="'Goat on a cliff" width="200">
+                </a>
                 <figcaption>A mountain goat looking at the camera standing on top of rocks </figcaption>
             </figure>
 
             <figure>
-                <img src="images/grand_canyon_waterfall.jpg" alt="Waterfall in a valley" width="200">
+                <a href="images/grand_canyon_waterfall.jpg" target="_blank" data-lightbox="canyon">
+                    <img src="images/grand_canyon_waterfall.jpg" alt="Waterfall in a valley" width="200">
+                </a>
                 <figcaption>Grand Canyon valley waterfall with trees</figcaption>
             </figure>
 

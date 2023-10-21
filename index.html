@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pets.ico" type="image/x-icon">
 
     <title>Pets</title>
 
@@ -22,7 +24,14 @@
             }
         } 
     </script>
-
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
 
 </head>
 
@@ -31,13 +40,13 @@
 
     <!-- navigation mobile -->
     <div class="topnav">
-        <a href="#index" class="active">Pets</a>
+        <a href="#index" class="active">Home/Pets</a>
         <div id="myLinks">
             <a href="index.html" style="text-decoration: underline;">Home/Pets</a>
             <a href="recipes.html">Recipes</a>
             <a href="travel.html">Travel</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
@@ -48,7 +57,6 @@
             <li><a href="travel.html">Travel</a></li>
         </ul>
     </nav> -->
-
 
     <main class="container" id="main">
 
@@ -76,11 +84,22 @@
             <h3>Photo Gallery</h3>
 
             <div class="gallery">
-                <img src="images/cheeto_carpet.jpg" alt="Cheeto laying sideways on the carpet" width="200">
-                <img src="images/cheeto_moon.jpg" alt="Cheeto lying in the sun in a half moon crescent shape"
-                    width="200">
-                <img src="images/cheeto_boxes.jpg" alt="Cheeto lying on boxes with one leg hanging off." width="200">
-                <img src="images/cheeto_attack.jpg" alt="Cheeto attacking a hand trying to pet him." width="200">
+                <a href="images/cheeto_carpet.jpg" target="_blank" data-lightbox="cheeto"
+                    data-title="Cheeto on Cat Tree">
+                    <img src="images/cheeto_carpet.jpg" alt="Cheeto laying sideways on the carpet" width="200">
+                </a>
+                <a href="images/cheeto_moon.jpg" target="_blank" data-lightbox="cheeto" data-title="Half-moon Cheeto">
+                    <img src="images/cheeto_moon.jpg" alt="Cheeto lying in the sun in a half moon crescent shape"
+                        width="200">
+                </a>
+                <a href="images/cheeto_boxes.jpg" target="_blank" data-lightbox="cheeto" data-title="Cheeto on box">
+                    <img src="images/cheeto_boxes.jpg" alt="Cheeto lying on boxes with one leg hanging off."
+                        width="200">
+                </a>
+                <a href="images/cheeto_attack.jpg" target="_blank" data-lightbox="cheeto"
+                    data-title="Cheeto attacking a hand">
+                    <img src="images/cheeto_attack.jpg" alt="Cheeto attacking a hand trying to pet him." width="200">
+                </a>
             </div>
 
             <h3>Likes</h3>
@@ -89,7 +108,7 @@
                 <li>Exploring</li>
                 <li>His Grandpa</li>
             </ul>
-            <!--Divya Shankar-->
+            <!--Divya Shankar -->
         </div>
 
         <div>
@@ -115,10 +134,19 @@
 
             <h3>Photo Gallery</h3>
             <div class="gallery">
-                <img src="images/Milktea_comfy.jpg" alt="Milktea enjoying a good massage" width="200">
-                <img src="images/Milktea_laptop.JPG" alt="Baby Milktea on laptop" width="200">
-                <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at mirror" width="200">
-                <img src="images/Milktea_catbox.JPG" alt="Milktea Catbox position" width="200">
+                <a href="images/Milktea_comfy.jpg" target="_blank" data-lightbox="milktea" data-title="Comfy Milktea">
+                    <img src="images/Milktea_comfy.jpg" alt="Milktea enjoying a good massage" width="200">
+                </a>
+                <a href="images/Milktea_laptop.JPG" target="_blank" data-lightbox="milktea" data-title="Baby Milktea">
+                    <img src="images/Milktea_laptop.JPG" alt="Baby Milktea on laptop" width="200">
+                </a>
+                <a href="images/Milktea_mirror.jpeg" target="_blank" data-lightbox="milktea"
+                    data-title="Milktea with mirror">
+                    <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at mirror" width="200">
+                </a>
+                <a href="images/Milktea_catbox.JPG" target="_blank" data-lightbox="milktea" data-title="Milktea Catbox">
+                    <img src="images/Milktea_catbox.JPG" alt="Milktea Catbox position" width="200">
+                </a>
             </div>
 
             <h3>Likes</h3>
@@ -154,11 +182,20 @@
             <h3>Photo Gallery</h3>
 
             <div class="gallery">
-                <img src="images/jingle_outside.jpg" alt="A close up picture of Jingle's face outside." width="200">
-                <img src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden."
-                    width="200">
-                <img src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
-                <img src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
+                <a href="images/jingle_outside.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle Outside">
+                    <img src="images/jingle_outside.jpg" alt="A close up picture of Jingle's face outside." width="200">
+                </a>
+                <a href="images/jingle_flowers.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle Flowers">
+                    <img src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden."
+                        width="200">
+                </a>
+                <a href="images/jingle_snow.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle in Snow">
+                    <img src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
+                </a>
+                <a href="images/jingle_window.jpg" target="_blank" data-lightbox="jingle"
+                    data-title="Jingle on the window">
+                    <img src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
+                </a>
             </div>
 
             <h3>Likes</h3>
@@ -186,16 +223,24 @@
 
             <h3>Photo Gallery </h3>
             <div class="gallery">
-                <img src="images/Finn_Shlumped.jpg" width="200"
-                    alt="Finn is exhausted after a long day of doing absolutely nothing">
-                <img src="images/Finn_Kitten.jpg" width="200"
-                    alt="A few days after we adopted Finn. He’s just posing for the camera">
-                <video width="200" controls>
-
-                    <source src="images/Finn_jumpscare.mov">
-
-                </video>
-                <img src="images/Finn_GOAT.jpg" width="200" alt="Finn dressed up as the king he is for Halloween ">
+                <a href="images/Finn_Shlumped.jpg" target="_blank" data-lightbox="finn" data-title="Tired Finn">
+                    <img src="images/Finn_Shlumped.jpg" width="200"
+                        alt="Finn is exhausted after a long day of doing absolutely nothing">
+                </a>
+                <a href="images/Finn_Kitten.jpg" target="_blank" data-lightbox="finn" data-title="Finn as a kitten">
+                    <img src="images/Finn_Kitten.jpg" width="200"
+                        alt="A few days after we adopted Finn. He’s just posing for the camera">
+                </a>
+                <a href="images/Finn_jumpscare.mov" target="_blank" data-lightbox="finn"
+                    data-title="Finn Jumpscare Video">
+                    <video width="200" controls>
+                        <source src="images/Finn_jumpscare.mov">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <a href="images/Finn_GOAT.jpg" target="_blank" data-lightbox="finn" data-title="Finn Halloween Costume">
+                    <img src="images/Finn_GOAT.jpg" width="200" alt="Finn dressed up as the king he is for Halloween">
+                </a>
             </div>
 
 
@@ -226,10 +271,19 @@
             <h3>Photo Gallery</h3>
 
             <div class="gallery">
-                <img src="images/happy_izzy_water.jpg" alt="Happy and black dog Izzy at their water bowl" width="200">
-                <img src="images/happy_walk.jpg" alt="Happy walking towards the camera" width="200">
-                <img src="images/happy_bed.jpg" alt="Happy laying in his cat bed" width="200">
-                <img src="images/happy_closeup.jpg" alt="A close-up photo of Happy’s face" width="200">
+                <a href="images/happy_izzy_water.jpg" target="_blank" data-lightbox="happy" data-title="Happy and Izzy">
+                    <img src="images/happy_izzy_water.jpg" alt="Happy and black dog Izzy at their water bowl"
+                        width="200">
+                </a>
+                <a href="images/happy_walk.jpg" target="_blank" data-lightbox="happy" data-title="Happy walking">
+                    <img src="images/happy_walk.jpg" alt="Happy walking towards the camera" width="200">
+                </a>
+                <a href="images/happy_bed.jpg" target="_blank" data-lightbox="happy" data-title="Happy in his Bed">
+                    <img src="images/happy_bed.jpg" alt="Happy laying in his cat bed" width="200">
+                </a>
+                <a href="images/happy_closeup.jpg" target="_blank" data-lightbox="happy" data-title="Closeup of Happy">
+                    <img src="images/happy_closeup.jpg" alt="A close-up photo of Happy’s face" width="200">
+                </a>
             </div>
 
             <h3>Likes</h3>
@@ -254,10 +308,18 @@
             <h3>Photo Gallery</h3>
 
             <div class="gallery">
+                <a href="images/Lucy_upsidedown.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
                 <img src="images/Lucy_upsidedown.JPG" alt="Lucy laying on her back" width="200">
+            </a>
+            <a href="images/Lucy_sleeping.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
                 <img src="images/Lucy_sleeping.JPG" alt="Lucy curled up in her bed sleeping" width="200">
+            </a>
+            <a href="images/Lucy_sleepingpt2.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
                 <img src="images/Lucy_sleepingpt2.JPG" alt="Lucy curled up sleeping" width="200">
+            </a>
+            <a href="images/Lucy_laying.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy"">
                 <img src="images/Lucy_laying.JPG" alt="Lucy laying staring at the camera" width="200">
+            </a>
             </div>
 
             <h3>Likes</h3>
@@ -284,12 +346,20 @@
             <h3>Photo Gallery</h3>
 
             <div class="gallery">
+                <a href="images/Luke.JPG" target="_blank" data-lightbox="luke" data-title="Luke">
                 <img src="images/Luke.JPG" alt="Luke looks into the camera; only head and front paws are in frame."
                     width="200">
+                </a>
+                <a href="images/luke_reads.JPG" target="_blank" data-lightbox="luke" data-title="Luke">
                 <img src="images/luke_reads.JPG" alt="Luke sits on chemistry textbook." width="200">
+            </a>
+            <a href="images/luke_in_sunn.JPG" target="_blank" data-lightbox="luke" data-title="Luke">
                 <img src="images/luke_in_sunn.JPG"
                     alt="Luke sits on a white bench in front of a window, grass is seen behind him." width="200">
+                </a>
+                <a href="images/luke_yawns.jpg" target="_blank" data-lightbox="luke" data-title="Luke">
                 <img src="images/luke_yawns.jpg" alt="Luke lays on his back on a gray blanket and yawns." width="200">
+            </a>
             </div>
 
             <h3>Likes</h3>
