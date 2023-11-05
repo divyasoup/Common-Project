@@ -1,3 +1,8 @@
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   color: black;
   background-color: white;
