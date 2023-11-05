@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pets.ico" type="image/x-icon">
+
+    <title>Pets</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="index">
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="index.html" class="active">Lucy</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <header>
+        <h1>Pets</h1>
+    </header>
+
+    <main class="container" id="main">
+
+        <div>
+            <h2>Lucy</h2>
+
+                <img src="images/Lucy.JPG" alt="Calico with white, orange, and black coloring"
+                    width="400">
+
+            <p>Lucy is a 17-year-old calico that I’ve had since I was 5, she has pretty much grown up with me my
+                whole
+                life. Even though she’s old she’s still kickin’ it and enjoys running around the house at 4am.
+                Her favorite foods include anything but her kibble. She enjoys sunbathing and long naps, along with
+                lots
+                of petting. However, she hates getting her stomach rubbed.
+            </p>
+
+            <h3>Photo Gallery</h3>
+
+            <div class="gallery">
+                <a href="images/Lucy_upsidedown.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
+                    <img src="images/Lucy_upsidedown.JPG" alt="Lucy laying on her back" width="200">
+                </a>
+                <a href="images/Lucy_sleeping.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
+                    <img src="images/Lucy_sleeping.JPG" alt="Lucy curled up in her bed sleeping" width="200">
+                </a>
+                <a href="images/Lucy_sleepingpt2.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
+                    <img src="images/Lucy_sleepingpt2.JPG" alt="Lucy curled up sleeping" width="200">
+                </a>
+                <a href="images/Lucy_laying.JPG" target="_blank" data-lightbox="lucy" data-title="Lucy">
+                    <img src="images/Lucy_laying.JPG" alt="Lucy laying staring at the camera" width="200">
+                </a>
+            </div>
+
+            <h3>Likes</h3>
+            <ul>
+                <li>Sleeping</li>
+                <li>Food</li>
+                <li>Her bed</li>
+            </ul>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

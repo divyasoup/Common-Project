@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pets.ico" type="image/x-icon">
+
+    <title>Pets</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="index">
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="index.html" class="active">Finn</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <header>
+        <h1>Pets</h1>
+    </header>
+
+    <main class="container" id="main">
+
+        <div>
+
+            <h2> Finn </h2>
+
+            <img src="images/Finn_Halloween.jpg" width="400" alt="Finn wears a bat costume for halloween">
+
+                <div class="text-block">
+                    <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go
+                        with
+                        grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might
+                        as
+                        well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy
+                        and
+                        chaotic.
+                        Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU
+                        alum,
+                        but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet
+                        office because he’ll suddenly act like he was never a house cat for 7 years.</p>
+                </div>
+
+                <h3>Photo Gallery </h3>
+                <div class="gallery">
+                    <a href="images/Finn_Shlumped.jpg" target="_blank" data-lightbox="finn" data-title="Tired Finn">
+                        <img src="images/Finn_Shlumped.jpg" width="200"
+                            alt="Finn is exhausted after a long day of doing absolutely nothing">
+                    </a>
+                    <a href="images/Finn_Kitten.jpg" target="_blank" data-lightbox="finn" data-title="Finn as a kitten">
+                        <img src="images/Finn_Kitten.jpg" width="200"
+                            alt="A few days after we adopted Finn. He’s just posing for the camera">
+                    </a>
+                    <video width="200" controls>
+                        <source src="images/Finn_jumpscare.mov">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="images/Finn_GOAT.jpg" target="_blank" data-lightbox="finn"
+                        data-title="Finn Halloween Costume">
+                        <img src="images/Finn_GOAT.jpg" width="200"
+                            alt="Finn dressed up as the king he is for Halloween">
+                    </a>
+                </div>
+
+
+                <h3>Likes</h3>
+                <ul>
+                    <li>Belly rubs</li>
+                    <li>Head Rubs</li>
+                    <li>Sleeping in cardboard boxes</li>
+                </ul>
+
+                <!-- Lauren Rodriguez -->
+            </div>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pets.ico" type="image/x-icon">
+
+    <title>Pets</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="index">
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="index.html" class="active">Home/Pets</a>
+        <div id="myLinks">
+            <a href="index.html" style="text-decoration: underline;">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <header>
+        <h1>Pets</h1>
+    </header>
+
+    <main class="container" id="main">
+
+        <div>
+            <h2>Luke</h2>
+            <img src="images/Luke.JPG" alt="Luke is a white cat with long hair and brown spots." width="400">
+
+            <div class="text-block">
+                <p>Luke is a six-year-old white cat; he is very energetic and likes to play fetch. Luke has one
+                    brother
+                    named Jesse. Luke’s favorite thing to eat are chicken cat treats.
+                    Luke is very badly behaved. He often jumps up on furniture and drinks out of people’s water
+                    glasses.
+                    He also steals people’s jewelry and hides it in his bed. Luke knows several commands; he can
+                    sit,
+                    jump, follow, play fetch, and give people his paw.
+                </p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+
+            <div class="gallery">
+                <a href="images/Luke.JPG" target="_blank" data-lightbox="luke" data-title="Luke">
+                    <img src="images/Luke.JPG" alt="Luke looks into the camera; only head and front paws are in frame."
+                        width="200">
+                </a>
+                <a href="images/luke_reads.JPG" target="_blank" data-lightbox="luke" data-title="Luke">
+                    <img src="images/luke_reads.JPG" alt="Luke sits on chemistry textbook." width="200">
+                </a>
+                <a href="images/luke_in_sunn.JPG" target="_blank" data-lightbox="luke" data-title="Luke">
+                    <img src="images/luke_in_sunn.JPG"
+                        alt="Luke sits on a white bench in front of a window, grass is seen behind him." width="200">
+                </a>
+                <a href="images/luke_yawns.jpg" target="_blank" data-lightbox="luke" data-title="Luke">
+                    <img src="images/luke_yawns.jpg" alt="Luke lays on his back on a gray blanket and yawns."
+                        width="200">
+                </a>
+            </div>
+
+            <h3>Likes</h3>
+            <ul>
+                <li>Luke likes Salmon</li>
+                <li>Luke likes to play fetch with hair ties.</li>
+                <li>Luke likes to sleep in laundry baskets.</li>
+            </ul>
+
+            <!--Katherine Isseks al-Abadi Hattersley -->
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

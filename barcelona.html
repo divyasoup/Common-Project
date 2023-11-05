@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/travel.ico" type="image/x-icon">
+
+    <title>Travel</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="travel">
+
+    
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="travel.html" class="active">Barcelona</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html" >Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <main id="main">
+        <div>
+            <h1>Travel</h1>
+        <div>
+            <h2>Barcelona, Spain</h2>
+            <img class="thumbnail gif" src="images/barcelona_gif.gif" alt="Gif of Church in Barcelona" width="400">
+            <img class="thumbnail static" src="images/Barcelona_non_gif.jpg" alt="Barcelona Beach" width="400">
+
+            <h3>Geographical Location: Europe</h3>
+
+            <p>Barcelona is a wonderful destination in Spain with all the necessities for a perfect vacation. It has a
+                population of roughly 1.6 million people and is located right on the beach of the Mediterranean Sea. It
+                is a hub of Art and Architecture as well as technology and contains a vibrant culture.
+                There are many activities to do in Barcelona as well as things to see. One of the most popular
+                activities is to visit Camp Nou and watch the amazing Barcelona FC soccer team play against various
+                other teams in La Liga. There are also many architectural masterpieces designed by Antonio Gaudi to
+                explore such as various Gaudi Houses and Parks and La Sagrada Familia, the largest unfinished catholic
+                church in the world.</p>
+
+            <h3>Photo Gallery</h3>
+
+            <figure>
+                <a href="images/Barcelona_Beach.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_Beach.jpg"
+                        alt="Aerial image of a sandy beach with buildings along the sand" width="200">
+                </a>
+                <figcaption>Beach in Barcelona</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Barcelona_GaudiHouse.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_GaudiHouse.jpg"
+                        alt="Image of an oval roof with wavy shape and pillars extending from the top, with a hole in the middle"
+                        width="200">
+                </a>
+                <figcaption>Roof of a Building designed by revolutionary architect Gaudi</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Barcelona_LamineYamal_BarcelonaFC.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_LamineYamal_BarcelonaFC.jpg"
+                        alt=" Lamine Yamal, a soccer player for Barcelona football club dribbled past three opponents wearing yellow jerseys."
+                        width="200">
+                </a>
+                <figcaption> A Barcelona soccer player dribbles past 3 defenders</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Barcelona_ParkGuell.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_ParkGuell.jpg"
+                        alt="View from a balcony decorated by multicolored ceramic mosaic looking out over two brown houses with checkered patterned white and tan roofs with a small tower on one of the houses, and the city of Barcelona in the distance."
+                        width="200">
+                </a>
+                <figcaption>A Balcony and Two houses designed by Architect Gaudi</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Barcelona_SagradaFamilia.jpg" target="_blank" data-lightbox="barcelona">
+                    <img src="images/Barcelona_SagradaFamilia.jpg"
+                        alt="Image looking up at a ginormous church with four towers in the foreground and one larger tower behind. 6 columns are in front of the towers supporting the structure of the church with statues depicting iconic moments in the Bible."
+                        width="200">
+                </a>
+                <figcaption>Large church still under construction designed by Architect Gaudi</figcaption>
+
+                <!--Kathryn Alcalde-->
+            </figure>
+        </div>
+    </main>
+</body>
+
+</html>

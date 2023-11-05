@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/travel.ico" type="image/x-icon">
+
+    <title>Travel</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="travel">
+
+    
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="travel.html" class="active">Yellowstone</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <main id="main">
+        <div>
+            <h1>Travel</h1>
+
+            <h2>Yellowstone</h2>
+
+            <img class="thumbnail gif" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+            <img class="thumbnail static" src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron">
+
+            <h3>Geographical Location: North America</h3>
+            <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and
+                provides an opportunity to see wildlife and explore geothermal areas. In fact, Yellowstone contains
+                about half the world's active geysers.</p>
+            <p>These unique opportunities also bring out a lot of bad decisions among the tourists. Every year visitors
+                injure themselves or the wildlife by getting close to the animals. You can see examples of people making
+                bad decisions by visiting <a
+                    href="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone
+                    National Park: Invasion of the Idiots</a>, <a
+                    href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or <a
+                    href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
+
+            <h3>Photo Gallery</h3>
+            <figure>
+                <a href="images/yellowstone_travertine.JPG" target="_blank" data-lightbox="yellowstone">
+                    <img class=thumbnail src="images/yellowstone_travertine.JPG" width="200"
+                        alt="A large mound of multi-colored travertine">
+                </a>
+                <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/yellowstone_sunset.jpg" target="_blank" data-lightbox="yellowstone">
+                    <img class=thumbnail src="images/yellowstone_sunset.jpg" width="200"
+                        alt="Sunset over mountains with some charred trees in the foreground">
+                </a>
+                <figcaption>The drive to Lamar Valley requires some dangerous roads. But the result is amazing sunset
+                    views.</figcaption>
+            </figure>
+
+
+            <figure>
+                    <video class=thumbnail width="200" controls>
+                        <source src="images/yellowstone_prism.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                <figcaption>The multicolored layers get their hues from different species of bacteria living in the
+                    cooler water around the spring.</figcaption>
+            </figure>
+
+
+            <figure>
+                    <video class=thumbnail width="200" controls>
+                        <source src="images/yellowstone_buffalo.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it
+                    ain't lickin the car, we aren't stopping."</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/yellowstone_sulphur_springs.JPG" target="_blank" data-lightbox="yellowstone">
+                    <img class=thumbnail src="images/yellowstone_sulphur_springs.JPG" width="200"
+                        alt="A large spring with clouds of sulfur smoke rising from it.">
+                </a>
+                <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.
+                </figcaption>
+            </figure>
+            <!-- Colleen van Lent -->
+
+    </main>
+</body>
+
+</html>

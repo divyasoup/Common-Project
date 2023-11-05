@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pets.ico" type="image/x-icon">
+
+    <title>Pets</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="index">
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="index.html" class="active">Jingle</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <header>
+        <h1>Pets</h1>
+    </header>
+
+    <main class="container" id="main">
+
+        <div>
+            <h2>Jingle</h2>
+
+            <img src="images/jingle.jpg" alt="" width="400">
+            <div class="text-block">
+
+                <p>Jingle is a domestic shorthair cat with a white chest and belly and a striped black and gray
+                    back.
+                    His paws are white and they look like mittens.
+                    Jingle loves going outside. He used to be an outdoor/indoor cat until we realized that he loved
+                    to
+                    get injured. Now, we take him on walks with a leash which he loves! Every time he sees me
+                    carrying
+                    the leash he goes crazy and meows to go out.
+                    Jingle is very mischievous, he has gotten into many different accidents. His first accident was
+                    outside; a bee stung his paw and he cried all night long. The second one was ALSO outside, he
+                    got
+                    stuck on a tree for four days. Finally, he came back home one day with his tail bleeding and
+                    ripped
+                    out.
+                </p>
+
+            </div>
+
+            <h3>Photo Gallery</h3>
+
+            <div class="gallery">
+                <a href="images/jingle_outside.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle Outside">
+                    <img src="images/jingle_outside.jpg" alt="A close up picture of Jingle's face outside." width="200">
+                </a>
+                <a href="images/jingle_flowers.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle Flowers">
+                    <img src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden."
+                        width="200">
+                </a>
+                <a href="images/jingle_snow.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle in Snow">
+                    <img src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
+                </a>
+                <a href="images/jingle_window.jpg" target="_blank" data-lightbox="jingle"
+                    data-title="Jingle on the window">
+                    <img src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
+                </a>
+            </div>
+
+            <h3>Likes</h3>
+            <ul>
+                <li>Going on walks</li>
+                <li>Being pet</li>
+                <li>Eating treats</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

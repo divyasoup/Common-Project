@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/recipes.ico" type="image/x-icon">
+
+    <title>Recipes</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+</head>
+
+<body id="recipes">
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="recipes.html" class="active">Tomato and Eggs</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <main id="main">
+
+        <h1>Recipes</h1>
+        <div>
+            <h2>Tomato and Eggs</h2>
+
+            <span>Origin: China</span>
+            <span>Source: Own Recipe</span>
+            <span>Main Dish</span>
+
+            <img src="images/tomato-egg-main-image.jpeg" alt="" width="400">
+
+            <p>
+                Tomato and eggs is a hot dish which originated from China. It is a simple and fast dish to
+                make, but it has good nutritional value. It is a very satisfying food to eat and popularly
+                served with rice and topped with green onions.
+            </p>
+
+            <h3>Recipe Ingredients</h3>
+
+            <ul>
+                <li>Tomatoes</li>
+                <li>Eggs</li>
+                <li>Salt</li>
+                <li>Sugar</li>
+                <li>Cooking oil</li>
+            </ul>
+
+            <h3>Recipe Steps</h3>
+
+            <ol>
+                <li>Crack eggs into a bowl and mix until scrambled.</li>
+                <li>Cut tomatoes into pieces around the size of your thumb.</li>
+                <li>Oil a hot pan and cook the eggs until satisfied then remove the eggs.</li>
+                <li>Re-oil the pan and cook the tomatoes until they loosen.</li>
+                <li>Combine eggs and tomatoes and season with salt and sugar.</li>
+            </ol>
+            <h3>Additional Food Images</h3>
+
+            <div class="recipe-images">
+                <a href="images/tomato-egg-side1.jpeg" target="_blank" data-lightbox="tomato"
+                    data-title="Finished Dish">
+                    <img src="images/tomato-egg-side1.jpeg" alt="Tomato and eggs served with rice." width="200">
+                </a>
+                <a href="images/tomatoes-cooking.webp" target="_blank" data-lightbox="tomato"
+                    data-title="Tomatoes Cooking">
+                    <img src="images/tomatoes-cooking.webp" alt="Tomatoes cooking in a pan." width="200">
+                </a>
+                <a href="images/scramble-eggs.jpeg" target="_blank" data-lightbox="tomato" data-title="Eggs Cooking">
+                    <img src="images/scramble-eggs.jpeg" alt="Scrambled eggs cooking in a pan." width="200">
+                </a>
+            </div>
+
+            <!--Eric Xu-->
+        </div>
+    </main>
+</body>
+
+</html>

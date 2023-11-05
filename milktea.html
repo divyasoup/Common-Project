@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pets.ico" type="image/x-icon">
+
+    <title>Pets</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="index">
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="index.html" class="active">Milktea</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <header>
+        <h1>Pets</h1>
+    </header>
+
+    <main class="container" id="main">
+
+        <div>
+            <h2>Milktea</h2>
+
+            <img src="images/Main.JPG" alt="Milktea taking nap" width="400">
+
+            <div class="text-block">
+                <p>
+                    Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses
+                    to
+                    eat anything dropped on the ground. She makes it clear when she has a demand of any sort by
+                    complaining in a loud, distinguished manner. If what she says could be translated, it probably
+                    would
+                    be, “This is atrocious, the water container has been empty for the 3rd time this week. I want to
+                    see
+                    the manager.”
+
+                    Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally
+                    brought
+                    upon by humans. I highly advise against keeping a Scottish fold because they are in constant
+                    pain
+                    when they reach around 2 years old. Cartilage accumulates around her paw joints and tail joints
+                    and
+                    it becomes painful for them to even walk. She is living evidence of human’s cruelty of breeding
+                    animals to look pretty while sacrificing the animals’ health.
+                </p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <a href="images/Milktea_comfy.jpg" target="_blank" data-lightbox="milktea" data-title="Comfy Milktea">
+                    <img src="images/Milktea_comfy.jpg" alt="Milktea enjoying a good massage" width="200">
+                </a>
+                <a href="images/Milktea_laptop.JPG" target="_blank" data-lightbox="milktea" data-title="Baby Milktea">
+                    <img src="images/Milktea_laptop.JPG" alt="Baby Milktea on laptop" width="200">
+                </a>
+                <a href="images/Milktea_mirror.jpeg" target="_blank" data-lightbox="milktea"
+                    data-title="Milktea with mirror">
+                    <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at mirror" width="200">
+                </a>
+                <a href="images/Milktea_catbox.JPG" target="_blank" data-lightbox="milktea" data-title="Milktea Catbox">
+                    <img src="images/Milktea_catbox.JPG" alt="Milktea Catbox position" width="200">
+                </a>
+            </div>
+
+            <h3>Likes</h3>
+
+            <ul>
+                <li>She loves individual corn kernels served on human hands</li>
+                <li>She enjoys sitting royally on suitcases to claim ownership of her humans</li>
+                <li>She prefers to be alone and sit on soft surfaces in her free time</li>
+            </ul>
+        </div>
+        <!--Olive Ren-->
+
+    </main>
+
+</body>
+
+</html>

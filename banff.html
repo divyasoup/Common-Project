@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/travel.ico" type="image/x-icon">
+
+    <title>Travel</title>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="travel">
+
+    
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <!-- navigation mobile -->
+    <div class="topnav">
+        <a href="travel.html" class="active">Banff</a>
+        <div id="myLinks">
+            <a href="index.html">Home/Pets</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="travel.html">Travel</a>
+        </div>
+        <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home/Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav> -->
+
+    <main id="main">
+        <div>
+            <h1>Travel</h1>
+        <div>
+            <h2>Banff National Park</h2>
+            <img class="thumbnail gif" src="images/Banff_National_Park.gif" alt="Gif of Banff's waters" width="400">
+            <img class="thumbnail static" src="images/Banff_National_Park.jpg" alt="Still of Banff's waters"
+                width="400">
+
+            <h3>Geographical Location: North America</h3>
+
+            <p>Banff National Park is in Western Canada in the province of Alberta. It is near the city of Calgary and
+                situated in the Rocky Mountains. Banff is known for its mountains and natural beauty, along with its
+                plant and animal life. The national park fuels the tourist industry in Western Canada.
+                Banff has many attractions within its borders including numerous lakes fed by glaciers creating an
+                iconic turquoise color. Banff also borders numerous other national parks further boosting its
+                attractiveness as a tourist location. Banff’s glaciers have been shrinking and may disappear in the next
+                few decades.
+            </p>
+
+            <h3>Photo Gallery</h3>
+            <figure>
+                <a href="images/Banff_gondola.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_gondola.jpg" alt="Gondola leading up to highest peaks of Banff" width="200">
+                </a>
+                <figcaption>Banff gondola leads to the highest peaks and allows for spectacular views </figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Banff_Moraine.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Moraine.jpg" alt="Large turquoise lake with surrounding peaks" width="200">
+                </a>
+                <figcaption>Lake Moraine is fed by glacial melt, the minerals in the glaciers give it its iconic color.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Banff_Fairmont.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Fairmont.jpg"
+                        alt="Large hotel complex in green forests surrounded by mountains" width="200">
+                </a>
+                <figcaption>The fairmont resort is the foremost luxury hotel in Banff built atop hot springs.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Banff_Sulphur_mountain.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Sulphur_mountain.jpg"
+                        alt="Rocky peaks and trails on a high mountain with mountains in the distance." width="200">
+                </a>
+                <figcaption>Sulphur mountain is accessible through the Banff Gondola and provides a central view of the
+                    surrounding mountain ranges.</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/Banff_gondola.jpg" target="_blank" data-lightbox="banff">
+                    <img src="images/Banff_Bow_falls.jpg"
+                        alt="Wide waterfall leading into calm river, surrounded by mountains and forests." width="200">
+                </a>
+                <figcaption>Bow falls is a major attraction and provides many hiking trails.</figcaption>
+            </figure>
+
+            <!--Kevin Chang-->
+        </div>
+
+    </main>
+</body>
+
+</html>
