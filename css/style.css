@@ -89,7 +89,7 @@ span {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: 333;
+  background: #333;
   display: block;
   position: absolute;
   right: 0;
@@ -99,7 +99,7 @@ span {
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: #f08080;
-  color: 333;
+  color: #333;
 }
 
 /* Style the active link (or home/logo) */
@@ -253,9 +253,9 @@ figcaption {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
-  *:img {
+  /* *:img {
     border: 2px solid black;
-  }
+  } */
   .recipe-images {
     display: grid;
     grid-template-columns: auto auto auto auto;
