@@ -89,7 +89,7 @@ span {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background: 333;
   display: block;
   position: absolute;
   right: 0;
@@ -99,15 +99,29 @@ span {
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: #f08080;
-  color: black;
+  color: 333;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: black;
+  background-color: #333;
   color: white;
 }
 
+button {
+  background-color: #f08080;
+  font-size: 18px;
+  display: inline-block;
+  margin: 30px 20px 0px ;
+  padding: 10px 20px;
+  border-radius: 10%;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 1;
+}
 
 /* INDEX PAGE */
 
@@ -246,4 +260,53 @@ figcaption {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+}
+
+@media screen and (max-width: 800px){
+  nav{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .topnav {
+    display: none;
+  }
+  .navMenu {
+    background-color: #333;
+    overflow: hidden;
+  }
+/* Style the links inside the navigation bar */
+.navMenu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navMenu a:hover {
+  background-color: #f08080;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navMenu a.active {
+  background-color: #f08080;
+  color: white;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+  
 }
