@@ -4,8 +4,9 @@
   align-items: center;
 }
 body {
-  color: black;
   background-color: white;
+  background-image: url(../images/clouds.png);
+  background-size: contain;
 }
 h1 {
   font-family: "sans-serif";
@@ -15,7 +16,7 @@ h1 {
   margin-top: 5%;
 }
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -335,7 +336,7 @@ figcaption {
 
 /* Add a color to the active/current link */
 .navMenu a.active {
-  background-color: #f08080;
+  background-color: #c05454;
   color: white;
 }
 .container {
