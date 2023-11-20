@@ -36,7 +36,6 @@ img {
   display: block;
   border: 2px solid #777;
   margin: auto;
-  /* border-top-right-radius: 30px; */
 }
 nav {
   border: solid 2px black;
@@ -217,9 +216,17 @@ figure {
 }
 figcaption {
   font-size: 16px;
+  text-align: center;
+  margin: auto;
+  width: 150px;
+}
+.travel-link {
+  display: block;
+  width: 400px;
   margin: auto;
   text-align: center;
-  width: 150px;
+  font-style: italic;
+  color: blue;
 }
 
 .static {
@@ -275,6 +282,34 @@ figcaption {
 }
 
 @media screen and (min-width: 1000px) {
+  h1 {
+    font-family: "sans-serif";
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+  }
+  h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+
+  }
+  h3 {
+    font-family: serif;
+    font-size: 25px;
+    text-align: center;
+    color: darkslateblue;
+    margin: 5%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 30px;
+    text-align: center;
+  }
   .topnav {
     display: none;
   }
@@ -308,5 +343,52 @@ figcaption {
   grid-template-columns: auto auto auto auto auto;
 }
 
+/* Index */
+.text-block{
+  margin: 5% 20%;
+}
+#index ul {
+  margin: 5% 30%;
+}
+
+/* recipes */
+
+#recipes p {
+  margin: 5% 20%;
+}
+
+#recipes ul {
+  font-size: 18px;
+  margin-left: 45%;
+}
+#recipes ol {
+  font-size: 18px;
+  margin-left: 30%;
+}
+
+/* Travel */
+video {
+  display: block;
+  border: solid 2px black;
+  margin: auto;
+}
+.thumbnail {
+  border: solid 1px black;
+}
+figure {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 5%;
+}
+figcaption {
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  width: 150px;
+}
+.travel-thumbnails {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
   
 }
